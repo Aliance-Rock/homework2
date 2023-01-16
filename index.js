@@ -44,4 +44,4 @@ promiseReduce(
 // reduce
 // fn2
 // reduce
-// 2git status
+// 2
