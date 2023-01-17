@@ -16,8 +16,8 @@ var fn2 = () =>
 		console.log('fn2')
 		setTimeout(() => resolve(2), 1000)
 	})
-function promiseReduce(asyncFunctions, reduce, initialValue) {
-	async function fn() {
+async function promiseReduce(asyncFunctions, reduce, initialValue) {
+
 		let result
 
 		async function fn3(promise, memo) {
@@ -29,8 +29,7 @@ function promiseReduce(asyncFunctions, reduce, initialValue) {
 			result = memo
 		}
 		return result
-	}
-	return fn()
+
 }
 promiseReduce(
 	[fn1, fn2],
